@@ -3,7 +3,11 @@
 <head>
     <form action="/del" method="post"
           enctype="multipart/form-data">
+        {% if message %}
+    <p>{{message}}</p>
+    {%endif%}
         <p>Please enter the Name: <input type="text" name = 'name'></p>
+        <p>Please enter your password: <input type="text" name = 'pw'></p>
         <p><input type="submit" value="Login"></p>
     </form>
 </head>

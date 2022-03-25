@@ -3,9 +3,12 @@
 <head>
     <form action="/edit" method="post"
           enctype="multipart/form-data">
-        <p>Please enter the old Name: <input type="text" name = 'oldname'></p>
-        <p>Please enter the new Name: <input type="text" name = 'newname'></p>
-        <p>Confirm the age again: <input type="text" name = 'age'></p>
+        {% if message %}
+    <p>{{message}}</p>
+    {%endif%}
+        <p>Please enter the Name: <input type="text" name = 'name'></p>
+        <p>Please enter your old password: <input type="text" name = 'oldpw'></p>
+        <p>Please enter your new password: <input type="text" name = 'newpw'></p>
         <p><input type="submit" value="Login"></p>
     </form>
 </head>
