@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <form action="/register" method="post"
+          enctype="multipart/form-data">
+            {% if message %}
+    <p>{{message}}</p>
+    {%endif%}
+        <p>Enter Name: <input type="text" name = 'name'></p>
+        <p>Password: <input type="text" name = 'password'></p>
+        <p><input type="submit" value="Register"> </p>
+    </form>
+    Already an user login <a href="http://127.0.0.1:5000/">here</a></p>
+</head>
+<body>
+
+</body>
+</html>
